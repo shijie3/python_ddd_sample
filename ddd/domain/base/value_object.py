@@ -1,9 +1,10 @@
 # coding=utf-8
-
-
+import inspect
 from inspect import getargspec
 from abc import ABCMeta
-import exceptions
+
+from domain.base.exceptions import NotDeclaredArgsException, ArgWithoutValueException, ViolatedInvariantException, \
+    InvariantReturnValueException, CannotBeChangeException
 
 MIN_NUMBER_ARGS = 1
 

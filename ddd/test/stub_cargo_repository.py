@@ -1,6 +1,6 @@
 # coding=utf-8
 
-from domain.model.base.repository import Repository
+from domain.base.repository import Repository
 
 
 class StubCargoRepository:
